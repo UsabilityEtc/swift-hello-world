@@ -2,7 +2,7 @@
 
 A simple Swift Hello, World package that imports a Swift package ([swift-greeting](https://github.com/UsabilityEtc/swift-greeting)) as a dependency.
 
-The Hello, World package package declares it's dependency on the `swift-greeting` package in it's `Package.swift` file:
+The `HelloWorld` package declares it's dependency on the `SwiftGreeting` package in it's `Package.swift` file:
 
 ```
 import PackageDescription
@@ -24,7 +24,7 @@ let greeting = Greeting(greeting: "Hello, World!")
 greeting.outputGreeting()
 ```
 
-Node that the name of the `SwiftGreeting` package is declared in the [Package.swift](https://github.com/UsabilityEtc/swift-greeting/blob/master/Package.swift) file of the `swift-greeting.git` repository:
+Note that the name of the `SwiftGreeting` package is declared in its [Package.swift](https://github.com/UsabilityEtc/swift-greeting/blob/master/Package.swift) file:
 
 ```
 import PackageDescription
@@ -34,4 +34,4 @@ let package = Package(
 )
 ```
 
-and is therefore independent of the name of the repository.
+and is therefore independent of the name of the repository, which is `swift-greeting`.
