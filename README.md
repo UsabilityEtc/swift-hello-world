@@ -2,6 +2,8 @@
 
 A simple Swift Hello, World example that imports a Swift package ([swift-greeting](https://github.com/UsabilityEtc/swift-greeting)) as a dependency.
 
+## The Package
+
 The `HelloWorld` package declares its dependency on the `SwiftGreeting` package in its `Package.swift` file using the URL of the `SwiftGreeting` package, which is https://github.com/UsabilityEtc/swift-greeting.git:
 
 ```
@@ -35,3 +37,19 @@ let package = Package(
 ```
 
 and is therefore independent of the name of the repository, which is `swift-greeting`.
+
+## Building
+
+After cloning this repository, to build the `HelloWorld` package first `cd` into `swift-hello-world` and then type:
+
+```
+swift build
+```
+
+## Running
+
+After building the `HelloWorld` package, type:
+
+```
+.build/debug/HelloWorld
+```
