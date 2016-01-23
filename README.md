@@ -1,8 +1,8 @@
 # swift-hello-world
 
-A simple Swift Hello, World package that imports a Swift package ([swift-greeting](https://github.com/UsabilityEtc/swift-greeting)) as a dependency.
+A simple Swift Hello, World example that imports a Swift package ([swift-greeting](https://github.com/UsabilityEtc/swift-greeting)) as a dependency.
 
-The `HelloWorld` package declares it's dependency on the `SwiftGreeting` package in it's `Package.swift` file:
+The `HelloWorld` package declares it's dependency on the `SwiftGreeting` package in its `Package.swift` file using the URL of the `SwiftGreeting` package:
 
 ```
 import PackageDescription
