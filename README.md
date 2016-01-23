@@ -2,7 +2,7 @@
 
 A simple Swift Hello, World example that imports a Swift package ([swift-greeting](https://github.com/UsabilityEtc/swift-greeting)) as a dependency.
 
-The `HelloWorld` package declares it's dependency on the `SwiftGreeting` package in its `Package.swift` file using the URL of the `SwiftGreeting` package:
+The `HelloWorld` package declares its dependency on the `SwiftGreeting` package in its `Package.swift` file using the URL of the `SwiftGreeting` package, which is https://github.com/UsabilityEtc/swift-greeting.git:
 
 ```
 import PackageDescription
@@ -15,7 +15,7 @@ let package = Package(
 )
 ```
 
-In `main.swift`, the `SwiftGreeting` package is imported to enable the code in `main.swift` to use the `Greeting` class:
+`main.swift` imports the `SwiftGreeting` package to enable it to use the `Greeting` class, which is defined in the `SwiftGreeting` package:
 
 ```
 import SwiftGreeting
