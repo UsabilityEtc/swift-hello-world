@@ -1,10 +1,10 @@
 # swift-hello-world
 
-A simple Swift Hello, World example that imports a Swift package ([swift-greeting](https://github.com/UsabilityEtc/swift-greeting)) as a dependency.
+A simple Swift Hello, World example that imports a Swift package ([swift-greeting](https://github.com/jeffreymorganio/swift-greeting)) as a dependency.
 
 ## The Package
 
-The `HelloWorld` package declares its dependency on the `SwiftGreeting` package in its `Package.swift` file using the URL of the `SwiftGreeting` package, which is https://github.com/UsabilityEtc/swift-greeting.git:
+The `HelloWorld` package declares its dependency on the `SwiftGreeting` package in its `Package.swift` file using the URL of the `SwiftGreeting` package, which is https://github.com/jeffreymorganio/swift-greeting.git:
 
 ```
 import PackageDescription
@@ -12,7 +12,7 @@ import PackageDescription
 let package = Package(
   name: "HelloWorld",
   dependencies: [
-      .Package(url: "https://github.com/UsabilityEtc/swift-greeting.git", majorVersion: 1)
+      .Package(url: "https://github.com/jeffreymorganio/swift-greeting.git", majorVersion: 1)
   ]
 )
 ```
@@ -26,7 +26,7 @@ let greeting = Greeting(greeting: "Hello, World!")
 greeting.outputGreeting()
 ```
 
-Note that the name of the `SwiftGreeting` package is declared in its [Package.swift](https://github.com/UsabilityEtc/swift-greeting/blob/master/Package.swift) file:
+Note that the name of the `SwiftGreeting` package is declared in its [Package.swift](https://github.com/jeffreymorganio/swift-greeting/blob/master/Package.swift) file:
 
 ```
 import PackageDescription
